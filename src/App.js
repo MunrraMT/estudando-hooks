@@ -1,10 +1,11 @@
 import LearningUseState from './use-state/use-state';
+import Titulo from './components/titulo';
 
 function App() {
   return (
     <>
       <header>
-        <h1>Estudando Hooks</h1>
+        <Titulo>Estudando Hooks</Titulo>
       </header>
       <main>
         <LearningUseState />
