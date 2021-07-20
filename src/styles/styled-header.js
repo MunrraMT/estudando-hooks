@@ -4,7 +4,6 @@ const StyledHeader = styled.header`
   padding: 1rem;
   background-color: #345995;
   color: #fff;
-  font-family: sans-serif;
 
   display: flex;
   flex-direction: column;

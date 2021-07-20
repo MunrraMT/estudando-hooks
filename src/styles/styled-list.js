@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const StyledList = styled.ul`
   list-style: none;
-  font-family: sans-serif;
   width: 12rem;
 
   li {
     min-width: 7rem;
     background-color: #ddd;
+    margin-top: 0.5rem;
     padding: 0.25rem;
     padding-left: 0.5rem;
     border-radius: 0.5rem;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledForm = styled.form`
-  font-family: sans-serif;
+  margin-bottom: 2rem;
 
   input {
     height: 2rem;
@@ -9,6 +9,7 @@ const StyledForm = styled.form`
     border-bottom-left-radius: 0.5rem;
     border-right: none;
     padding: 0.5rem;
+    margin-top: 1rem;
   }
 
   input:focus,

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import StyledSection from '../styles/styled-section';
-import StyledForm from './styled-form';
-import StyledList from './styled-list';
+import StyledForm from '../styles/styled-form';
+import StyledList from '../styles/styled-list';
 
 const TodoListA = () => {
   const [inputValue, setInputValue] = useState('');
