@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionBase = styled.section`
+const StyledSection = styled.section`
   border: 2px solid black;
   padding: 2rem;
   margin: 1rem;
@@ -12,4 +12,4 @@ const SectionBase = styled.section`
   justify-content: space-around;
 `;
 
-export default SectionBase;
+export default StyledSection;

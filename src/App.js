@@ -1,16 +1,19 @@
-import LearningUseState from './use-state/use-state';
-import Titulo from './components/titulo';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import HomePage from './pages/home-page';
+import UseStatePage from './pages/use-state-page';
 
 function App() {
   return (
-    <>
-      <header>
-        <Titulo>Estudando Hooks</Titulo>
-      </header>
-      <main>
-        <LearningUseState />
-      </main>
-    </>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/'>
+          <HomePage />
+        </Route>
+        <Route exact path='/state'>
+          <UseStatePage />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
