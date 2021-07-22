@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import StyledSection from '../styles/styled-section';
 import StyledForm from '../styles/styled-form';
-import StyledList from '../styles/styled-list';
+import { ButtonDelete, StyledList } from '../styles/styled-list';
 
-const TodoListA = () => {
+const ToDoList = () => {
   const [inputValue, setInputValue] = useState('');
   const [tarefas, setTarefas] = useState([]);
 
@@ -12,7 +12,7 @@ const TodoListA = () => {
   const adicionaTarefas = (e) => {
     e.preventDefault();
 
-    setTarefas([...tarefas, inputValue]);
+    setTarefas([inputValue, ...tarefas]);
 
     setInputValue('');
   };
@@ -24,7 +24,7 @@ const TodoListA = () => {
       {tarefas.map((tarefa, index) => (
         <li key={`tarefa-${numeroAleatorio()}`}>
           {tarefa}
-          <button
+          <ButtonDelete
             onClick={() => {
               setTarefas(
                 tarefas.filter((__, indexFilter) => indexFilter !== index)
@@ -33,7 +33,7 @@ const TodoListA = () => {
             type='button'
           >
             apagar
-          </button>
+          </ButtonDelete>
         </li>
       ))}
     </StyledList>
@@ -58,4 +58,4 @@ const TodoListA = () => {
   );
 };
 
-export default TodoListA;
+export default ToDoList;

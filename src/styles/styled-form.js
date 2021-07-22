@@ -26,6 +26,8 @@ const StyledForm = styled.form`
     border-color: #345995;
     background-color: #345995;
     color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
   }
 `;
 
