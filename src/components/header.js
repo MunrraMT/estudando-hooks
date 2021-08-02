@@ -11,9 +11,16 @@ const Header = () => (
             home
           </NavLink>
         </li>
+
         <li>
           <NavLink exact to='/state' activeClassName='nav-active'>
             useState
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink exact to='/context' activeClassName='nav-active'>
+            useContext
           </NavLink>
         </li>
       </ul>
