@@ -1,8 +1,7 @@
 import Header from '../components/header';
-import Contador from '../use-state/contador';
-import ToDoList from '../use-state/todo-list-a';
-import ToDoListB from '../use-state/todo-list-b';
-import ToDoListC from '../use-state/todo-list-c';
+import Contador from '../components/use-state/contador';
+import ToDoList from '../components/use-state/todo-list-a';
+import ToDoListB from '../components/use-state/todo-list-b';
 
 const UseStatePage = () => (
   <>
@@ -11,7 +10,6 @@ const UseStatePage = () => (
       <Contador />
       <ToDoList />
       <ToDoListB />
-      <ToDoListC />
     </main>
   </>
 );
